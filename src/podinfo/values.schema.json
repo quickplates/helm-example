@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "app": {
+      "properties": {
+        "port": {
+          "type": "integer"
+        }
+      },
+      "required": ["port"],
+      "type": "object"
+    },
+    "common": {
+      "properties": {
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "configMap": {
+      "properties": {
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "deployment": {
+      "properties": {
+        "metadata": {
+          "type": "object"
+        },
+        "spec": {
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pod": {
+      "properties": {
+        "metadata": {
+          "type": "object"
+        },
+        "spec": {
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "service": {
+      "properties": {
+        "metadata": {
+          "type": "object"
+        },
+        "port": {
+          "type": "integer"
+        },
+        "spec": {
+          "type": "object"
+        }
+      },
+      "required": ["port"],
+      "type": "object"
+    }
+  },
+  "required": ["app", "service"],
+  "type": "object"
+}
